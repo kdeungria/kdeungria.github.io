@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kristine De Ungria · Data Science Portfolio</title>
+  <meta name="description" content="Data science portfolio of Kristine De Ungria.">
+  <style>
+    /* ===== Colors: change --accent to adjust the purple everywhere ===== */
+    :root {
+      --accent: #7c5cff;
+      --accent-soft: #efeaff;
+      --text: #1d1b26;
+      --muted: #5f5b6e;
+      --line: #e6e3ee;
+      --bg: #fcfbff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 72px 24px 48px; }
+
+    /* Header */
+    .tag {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.85rem; color: var(--accent); letter-spacing: 0.04em;
+    }
+    h1 { font-size: 2.6rem; line-height: 1.15; margin: 8px 0 16px; letter-spacing: -0.02em; }
+    .intro { font-size: 1.1rem; color: var(--muted); max-width: 600px; }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .btn {
+      display: inline-block; padding: 9px 18px; border-radius: 8px;
+      border: 1px solid var(--accent); font-size: 0.95rem; font-weight: 500;
+    }
+    .btn.primary { background: var(--accent); color: #fff; }
+    .btn:hover { text-decoration: none; opacity: 0.9; }
+
+    /* Sections */
+    section { margin-top: 64px; }
+    h2 {
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--muted); margin-bottom: 20px; padding-bottom: 8px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* Project cards */
+    .card {
+      display: block; background: #fff; border: 1px solid var(--line);
+      border-left: 3px solid var(--accent); border-radius: 10px;
+      padding: 20px 22px; margin-bottom: 14px; color: var(--text);
+      transition: box-shadow 0.15s;
+    }
+    .card:hover { text-decoration: none; box-shadow: 0 4px 16px rgba(124, 92, 255, 0.12); }
+    .card h3 { font-size: 1.1rem; margin-bottom: 6px; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .chips { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.75rem; background: var(--accent-soft); color: var(--accent);
+      padding: 2px 9px; border-radius: 999px;
+    }
+    .badge {
+      font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em;
+      background: var(--accent-soft); color: var(--accent); border: 1px dashed var(--accent);
+      padding: 2px 8px; border-radius: 999px; margin-left: 8px; vertical-align: middle;
+    }
+    .soon { color: var(--muted); font-size: 0.9rem; font-style: italic; }
+
+    /* Off the clock */
+    .hobbies { display: flex; flex-wrap: wrap; gap: 10px; }
+    .hobby {
+      background: #fff; border: 1px solid var(--line); border-radius: 8px;
+      padding: 8px 14px; font-size: 0.95rem;
+    }
+
+    footer { margin-top: 72px; font-size: 0.85rem; color: var(--muted); }
+
+    @media (max-width: 560px) {
+      .wrap { padding-top: 48px; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+
+    <!-- ===== INTRO: edit your one-liner here ===== -->
+    <header>
+      <p class="tag">// data science portfolio</p>
+      <h1>Kristine De Ungria</h1>
+      <p class="intro">
+        I turn messy data into clear answers, using SQL, Python, and Power BI.
+        This is where I keep my projects, plus a few of my interests, each with a data science twist.
+      </p>
+      <div class="links">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="https://github.com/kdeungria">GitHub</a>
+        <!-- Add more buttons the same way, e.g.:
+        <a class="btn" href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+        <a class="btn" href="mailto:you@example.com">Email</a>
+        -->
+      </div>
+    </header>
+
+    <!-- ===== PROJECTS: copy a <a class="card"> block to add a project ===== -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <a class="card" href="https://github.com/kdeungria/kdeungria.github.io/tree/main/projects/healthcare-analytics">
+        <h3>Healthcare Analytics</h3>
+        <p>Patient care and operational efficiency across a hospital network: readmission risk, counterfactual scenarios, and a facility network analysis on 100,000 synthetic patients.</p>
+        <div class="chips">
+          <span class="chip">SQL</span><span class="chip">PostgreSQL</span>
+          <span class="chip">Python</span><span class="chip">Power BI</span>
+        </div>
+      </a>
+
+      <a class="card" href="https://github.com/kdeungria/kdeungria.github.io/tree/main/projects/recipe-comment-bot">
+        <h3>Recipe Comment Bot <span class="badge">In progress</span></h3>
+        <p>I bake, and recipe comment sections tend to fill up with the same few questions. This project builds a bot that answers those common questions automatically on a recipe page, then uses an analytics dashboard to show what readers actually ask.</p>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">Hugging Face</span><span class="chip">RAG</span>
+        </div>
+      </a>
+
+      <!-- Template for the next project:
+      <a class="card" href="https://github.com/kdeungria/kdeungria.github.io/tree/main/projects/FOLDER-NAME">
+        <h3>Project Title</h3>
+        <p>One or two sentences on the question and the result.</p>
+        <div class="chips">
+          <span class="chip">Tool</span><span class="chip">Tool</span>
+        </div>
+      </a>
+      -->
+
+      <p class="soon">More projects on the way.</p>
+    </section>
+
+    <!-- ===== OFF THE CLOCK: edit or add hobbies ===== -->
+    <section>
+      <h2>Off the clock</h2>
+      <div class="hobbies">
+        <span class="hobby">🍰 Baking</span>
+        <span class="hobby">🏸 Badminton</span>
+        <span class="hobby">📚 Reading</span>
+        <span class="hobby">☕ Café hopping</span>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Kristine De Ungria
+    </footer>
+
+  </main>
+</body>
+</html>
