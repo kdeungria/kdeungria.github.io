@@ -1,0 +1,32 @@
+# Secrets: never commit
+.env
+
+# Synthea data and the generator (large files, can be regenerated)
+data/
+tools/
+
+# Run logs
+logs/
+
+# Leftover working files
+old_numbers_found.txt
+recheck_story.py
+capacity_baseline.py
+_archive/
+
+# Python and Jupyter clutter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Power BI temporary and backup files
+*.pbix.bak
+~$*
+*.bak.pbix
+*.bax.pbix

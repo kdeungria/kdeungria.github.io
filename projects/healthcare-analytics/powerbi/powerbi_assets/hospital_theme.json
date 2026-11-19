@@ -1,0 +1,35 @@
+{
+  "name": "Hospital Care Quality",
+  "dataColors": ["#B7BDD8", "#1F2A5A", "#2BB39A", "#E4572E", "#8F97C2", "#4FD1B5", "#5A6178", "#CBD0E6"],
+  "background": "#FFFFFF",
+  "foreground": "#17224D",
+  "tableAccent": "#1F2A5A",
+  "good": "#2BB39A",
+  "neutral": "#B7BDD8",
+  "bad": "#E4572E",
+  "maximum": "#1F2A5A",
+  "center": "#8F97C2",
+  "minimum": "#ECEEF5",
+  "textClasses": {
+    "callout": {"fontSize": 26, "fontFace": "Segoe UI Semibold", "color": "#17224D"},
+    "title": {"fontSize": 11, "fontFace": "Segoe UI Semibold", "color": "#1F2A5A"},
+    "header": {"fontSize": 10, "fontFace": "Segoe UI Semibold", "color": "#1F2A5A"},
+    "label": {"fontSize": 9, "fontFace": "Segoe UI", "color": "#2B3150"}
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{"show": true, "color": {"solid": {"color": "#FFFFFF"}}, "transparency": 0}],
+        "border": [{"show": true, "color": {"solid": {"color": "#E3E6EF"}}, "radius": 10}],
+        "dropShadow": [{"show": false}],
+        "title": [{"show": true, "fontColor": {"solid": {"color": "#1F2A5A"}}, "fontSize": 11, "fontFamily": "Segoe UI Semibold", "alignment": "left"}]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{"color": {"solid": {"color": "#F4F6FB"}}, "transparency": 0}],
+        "outspace": [{"color": {"solid": {"color": "#F4F6FB"}}}]
+      }
+    }
+  }
+}
